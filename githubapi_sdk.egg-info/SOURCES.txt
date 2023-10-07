@@ -1,0 +1,6 @@
+setup.py
+githubapi_sdk.egg-info/PKG-INFO
+githubapi_sdk.egg-info/SOURCES.txt
+githubapi_sdk.egg-info/dependency_links.txt
+githubapi_sdk.egg-info/requires.txt
+githubapi_sdk.egg-info/top_level.txt
