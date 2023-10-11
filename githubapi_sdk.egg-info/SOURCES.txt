@@ -1,3 +1,4 @@
+README.md
 setup.py
 githubapi_sdk.egg-info/PKG-INFO
 githubapi_sdk.egg-info/SOURCES.txt

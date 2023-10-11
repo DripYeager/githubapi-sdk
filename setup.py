@@ -4,7 +4,7 @@ setup(
     name='githubapi-sdk',
     version='0.1',
     description='SDK for accessing GitHub API',
-    author='Your Name',
+    author='Saransh Jaiswal',
     author_email='saranshjaiswal09@gmail.com',
     packages=find_packages(),  # Automatically find all packages in your project
     install_requires=[

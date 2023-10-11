@@ -1,10 +1,17 @@
 import unittest
-from githubapisdk import get_repository_count
+from githubapisdk import GitHubAPIClient
 
-class TestGitHubAPISDK(unittest.TestCase):
+class TestGitHubAPIClient(unittest.TestCase):
+    def setUp(self):
+        self.github_client= GitHubAPIClient()
+        self.github_client.set_api_token('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') #Replacing with the API token
+
     def test_get_repository_count(self):
-        # Test cases for your SDK functions
-        self.assertEqual(get_repository_count('DripYeager'), 5)  # Replace 'your_username' and 10 with actual values
-        self.assertEqual(get_repository_count('MihirVangani17'), 6)
-if __name__ == '__main__':
-    unittest.main()
+        repo_count1= self.github_client.get_repository_count('DripYeager')
+        repo_count2= self.github_client.get_repository_count('MihirVangani17')
+
+        self.assertEqual(repo_count1,6)
+        self.assertEqual(repo_count2,6)
+
+    if __name__ == '__main__':
+        unittest.main()
